@@ -36,7 +36,7 @@ form {
   display: grid;
   padding: 0 20px 30px;
   border-radius: 6px;
-  max-height: 320px;
+  max-height: 400px;
 }
 
 input {
@@ -59,7 +59,7 @@ svg {
   position: absolute;
   right: 20px;
   top: 50%;
-  transform: translateY(-100%);
+  transform: translateY(-50%);
 }
 
 .password-visibility {
@@ -80,10 +80,17 @@ button {
   margin-top: 30px;
 }
 
+.hide-page {
+  display: none !important;
+}
 
 @media screen and (min-width: 500px) {
   .heading-text, .heading-text {
     font-size: 2.0rem;
+  }
+
+  svg {
+    transform: translateY(-100%);
   }
 
   .other-logo {
@@ -107,6 +114,7 @@ button {
 
   form {
     width: 500px;
+    max-height: 330px;
   }
 
   .intro-text {
