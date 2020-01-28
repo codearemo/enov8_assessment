@@ -1,0 +1,129 @@
+.other-logo {
+  display: none;
+}
+
+main {
+  height: 95vh;
+  padding: 2.5vh 20px 2.5vh;
+}
+
+.login, .signup {
+  height: 100%;
+}
+
+.intro-text {
+  margin: 60px 0 0;
+}
+
+.heading-text {
+  color: #0a2e65;
+  font-weight: bolder;
+}
+
+.subheading-text {
+  color: rgba(10,46,101,.3);
+  margin-top: 10px;
+  font-weight: bolder;
+}
+
+.login-form-hold {
+  margin-top: 30px;
+}
+
+form {
+  border: 1px solid rgba(0,102,245,.15);
+  background-color: #fff;
+  display: grid;
+  padding: 0 20px 30px;
+  border-radius: 6px;
+  max-height: 320px;
+}
+
+input {
+  color: #0a2e65;
+  border: 1px solid rgba(10,46,101,.1);
+  padding-bottom: 15px;
+  padding-top: 15px;
+  padding-left: 20px;
+  border-radius: 4px;
+  width: 100%;
+  font-size: 16px;
+}
+
+label {
+  position: relative;
+  margin-top: 30px;
+}
+
+svg {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-100%);
+}
+
+.password-visibility {
+  fill: rgba(0, 0, 0, 0.3);
+}
+
+.forgot-pwd {
+  margin-top: 35px;
+}
+
+span {
+  font-size: 0.8rem;
+  margin-top: 30px;
+  display: block;
+}
+
+button {
+  margin-top: 30px;
+}
+
+
+@media screen and (min-width: 500px) {
+  .heading-text, .heading-text {
+    font-size: 2.0rem;
+  }
+
+  .other-logo {
+    display: block;
+  }
+
+  .top-left-logo {
+    display: none;
+  }
+
+  .login, .signup {
+    display: grid;
+    grid-template-rows: 1fr 50px;
+  }
+
+  .content-hold {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  form {
+    width: 500px;
+  }
+
+  .intro-text {
+    height: 80%;
+    display: grid;
+    grid-template-rows: 100px 1fr;
+  }
+  
+  .login-form-hold {
+    height: 80%;
+    display: grid;
+    grid-template-rows: 100px 1fr;
+  }
+
+  .create-acc-link-hold, .terms-hold {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+}
